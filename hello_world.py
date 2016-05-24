@@ -13,7 +13,7 @@ sqlContext = SQLContext(sc)
 
 #log
 log4jLogger = sc._jvm.org.apache.log4j
-LOG = log4jLogger.LogManager.getLogger("com.criteo.search.sem.esp.spark")
+LOG = log4jLogger.LogManager.getLogger("hello.world.spark")
 LOG.info("Args = " + conf.getAll().__str__())
 
 inputFile = conf.get("spark.input")
